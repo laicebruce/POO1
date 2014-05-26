@@ -20,7 +20,7 @@ public class Agencia {
             }
         }
         
-        throw new RuntimeException("Conta n√£o encontrada: " + numero);
+        throw new RuntimeException("Conta n„o encontrada: " + numero);
     }
 
     public void setNumero(int numero) {
@@ -38,5 +38,15 @@ public class Agencia {
     public Banco getBanco() {
         return banco;
     }
-
+    
+    
+    
+    
+   
+    private String cadastrarCliente;    
+    private List<Cliente> CadastroClienteNome = new ArrayList<Cliente>();   
+     
+    public void cadastrarCliente(Cliente nome) {
+    	cadastrarCliente.add(nome);
+    }
 }
